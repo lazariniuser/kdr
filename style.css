@@ -1,0 +1,85 @@
+
+a{
+    text-decoration: none;
+}
+.hover-menu-item:hover{
+    background-color: rgb(161, 161, 161);
+    border-radius: 2px;
+
+}
+.banner{
+    height: 400px;
+    overflow: hidden;
+}
+.banner1{
+    background-image: url("bg1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+.depoimentos{
+    background-color: rgb(17, 17, 17);
+    border-radius: 5px;
+    color:white;
+ 
+
+}
+.h-dep{
+    min-height: 350px;
+    text-align: center;
+    font-size: larger;
+    padding-inline: 30px;
+}
+.description{
+    visibility: hidden;
+    border-radius: 3px;
+    transition: 0.4s;
+}
+
+.p-fixed{
+    position: fixed;
+    z-index: 2;
+
+}
+
+.dropinho{
+    width: 70px;
+    margin: 25px;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+.dropinho:hover{
+    cursor: pointer;
+    transition: 0.2s;
+    transform: scale(1.5);
+}
+
+.carousel-size-image{
+   height: 300px;
+    overflow:hidden;
+    object-fit: contain;
+}
+.dropinho-area-classe{
+    height: 300px;
+    width: 300px;
+    padding: 10px;
+    margin: 20px;
+}
+.messages-area{
+    height: 320px;
+    min-width: 350px;
+}
+.campodigita{
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.alerta{
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+.header-main{
+    width:max-content ;
+}
