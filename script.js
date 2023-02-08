@@ -31,4 +31,7 @@ function minimizar(){
     $('#btn-dropinho').toggleClass('d-none') 
 
 }
+function pr_options(){
+    $('.menuprofile').toggleClass('d-none')
+}
 

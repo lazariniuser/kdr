@@ -39,12 +39,7 @@ if(isset($_POST['email_login']) || isset($_POST['senha_login'])) {
 
     }
 
-}
-
-
-    
-    
-
+}     
 
 ?>
 

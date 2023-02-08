@@ -83,3 +83,6 @@ a{
 .header-main{
     width:max-content ;
 }
+.prphoto:hover{
+    cursor: pointer !important;
+}
