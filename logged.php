@@ -1,8 +1,7 @@
 <?php
     include 'cabecalho.php';
-    include 'connect.php';
-    session_start();
-    
+    include 'verifica.php';
+
 ?>
 <html>
 <body>
@@ -17,6 +16,8 @@
                 </form>
             </div>
             <div class="col-12">
+       
+            </div>
 
 </body>
 </html>

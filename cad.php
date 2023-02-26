@@ -3,7 +3,7 @@
 
 include 'cabecalho.php';
 $nome = $_POST['nome'];
-$email = $_POST['email'];
+$email_aluno = $_POST['email'];
 $celular = $_POST['cel'];
 $datanasc = $_POST['datanascimento'];
 
@@ -23,9 +23,9 @@ if( empty($nome) || empty($email) || empty($celular) || empty($datanasc)){
 
 }
 else{
-    $insercao = "INSERT INTO alunos (nome, email, celular, datanascimento) VALUES ('$nome', '$email', '$celular', '$datanasc')";
+    $insercao = "INSERT INTO alunos (nome, email, celular, datanascimento) VALUES ('$nome', '$email_aluno', '$celular', '$datanasc')";
     $resultado = mysqli_query($db_kdrop, $insercao);
-    header("location: index.php");
+    header("location: logged.php");
     //$funcionou = true;
 }
 
