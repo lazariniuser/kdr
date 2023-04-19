@@ -3,9 +3,12 @@
 
     $recebe_imagem = $_FILES['input-foto-perfil']['name'];
     $tamanho_imagem = $_FILES['input-foto-perfil']['size'];
+    
     $userid = $_SESSION['id'];
 
     if($tamanho_imagem < 10000000){
+        $extendArquivo = end(explode('.', $_FILES["input-foto-perfil"]["name"]));
+        $cript = "profile-photos/" . sha1(time() . $_FILES["input-foto-perfil"]["name"]) . "." . $extendArquivo;
         $sql_profile = "UPDATE contas SET photo=:imagem where id=:user_id";
         $dado_para_atualizar = [
             'imagem' => $recebe_imagem,
@@ -13,6 +16,7 @@
           ];
           $insere_imagem = $pdo->prepare($sql_profile);
           $insere_imagem->execute($dado_para_atualizar);
+          file_put_contents($_FILES["input-foto-perfil"]["name"], $cript);
           header("location: logged.php");
 
     }
