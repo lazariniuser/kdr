@@ -46,8 +46,13 @@ class Usuario{
         }
         return $array;
     }
-} 
 
 
+
+
+    
+ 
+
+}
 ?>
 
