@@ -28,7 +28,7 @@ class Usuario{
 
         }
 
-    }
+    } 
 
     public function logado($id){
         global $pdo;

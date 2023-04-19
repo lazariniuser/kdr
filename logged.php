@@ -4,6 +4,7 @@
    require_once 'bd_contas.php'; 
 
 
+
 ?>
 <html>
 <body>
@@ -20,11 +21,12 @@
             <div class="col-12 bg-light text-center">
 
             <div class="fotoperfil">
-                <?php
-                    $sql_busca = "SELECT photo FROM contas WHERE id = :id";
+                <img src="
+                <?php   require_once 'imagens.php';
+                    echo "profile-photos/$recebe_imagem[photo]";
 
                 ?>
-
+                ">
  
                 <form method="POST" class="form-control" action="imagens.php" enctype="multipart/form-data">
                       <label for="fotoperfil-label"> 
